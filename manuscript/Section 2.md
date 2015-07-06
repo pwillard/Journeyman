@@ -23,13 +23,13 @@ As you may have realized by now, there are a set of abbreviations that keep show
 | Quantity| Unit| Abbreviation |
 |=========|=====|==============|
 | Time    | second | s |
-| Frequency | hertz | Hz |
+| Frequency | Hertz | Hz |
 | Power   | watt | W |
-| Voltage | volt | V |
-| Current | ampere | A |
+| Voltage | Volt | V |
+| Current | Ampere | A |
 | Resistance | ohm | {$$}\Omega{/$$} |
-| Capacitance | farad | F |
-| Inductance | henry | H |
+| Capacitance | Farad | F |
+| Inductance | Henry | H |
 
 
 ### Prefix list
@@ -51,7 +51,7 @@ DC Voltage
 
 : Voltage is a way of using numbers to describe an *electric' field.  Notice that I did not say 'magnetic' field.  When ever a negative charge is able to attract a positive charge there is voltage. Voltage is the measurement of a potential differnce between the 2 points involved.
 
-If you think of it from a 'potential' point of view, imagine that voltage is a ladder with many rungs.  1 volt is closer to the ground than 2 volts and so on. *This analogy also helps to understand the concept of "ground" in a circuit.*  Ground is a *known* point of reference.  Negative voltages are merely values that below ground with respect to *other* measured values elsewhere.
+If you think of it from a 'potential' point of view, imagine that voltage is a ladder with many rungs.  1 Volt is closer to the ground than 2 Volts and so on. *This analogy also helps to understand the concept of "ground" in a circuit.*  Ground is a *known* point of reference.  Negative voltages are merely values that below ground with respect to *other* measured values elsewhere.
 
 The possibility of the 'electric field' being able to leap across distances between negative charges and positive charges without the aid of a conductor is normally very weak. But this is exactly what lightning and static electricity are.  When the electric field potential (voltage) between the negative charge and the positive charge are high enough, we can see a spark across a small air gap such as with an automobile spark plug or with lightning when related to weather conditions.
 
@@ -61,7 +61,7 @@ So, in summary, voltage is a measurement of the potential of an electric field. 
 
 W> *Don't Misunderstand Voltage*
 
-Most people, when asked, would say that 9 Volts is safe and that say, 10,000 volts will kill you... but the truth is, they would be wrong.  The measure of what will kill you is actually related to current forced through your body and not voltage.  Nearly any amount of current over 15 milliamps can give you a jolt and it is currents near 150 milliamps (mA), similar to what is used to drive a small toy motor, that can be be lethal.  Under the right conditions, muscular spasms can occur that severely affect the heart.
+Most people, when asked, would say that 9 Volts is safe and that say, 10,000 Volts will kill you... but the truth is, they would be wrong.  The measure of what will kill you is actually related to current forced through your body and not voltage.  Nearly any amount of current over 15 milliamps can give you a jolt and it is currents near 150 milliamps (mA), similar to what is used to drive a small toy motor, that can be be lethal.  Under the right conditions, muscular spasms can occur that severely affect the heart.
 
 So what is the reality about lethal voltage?  Well, your body forms a rudimentary resistor/capacitor combination and when the combination of current and voltage is enough that the human body can operate more like a conductor than an insulator, you can achieve electrocution if vital body parts are involved.  It has been known to occur with as little as 48V DC if enough current is available and it traverses the right path, or wrong path depending on your view.  It's something to keep in mind.
 
@@ -384,7 +384,7 @@ The layout of a data sheet for electronic components is fairly standardized.  It
 
 It will include package information, such as case style which on this part is the JEDEC standard case TO-18 which is a small metal can enclosure.  The JEDEC name translates to Transistor Outline Package style number 18 which itself has special characteristics for heat dissipation.
 
-In a tabular section, it will include the electrical characteristics of the part such as voltage ratings, current ratings and temperature characteristics.  In the case of the 2N2222A, we see that the part can "switch" up to 50 volts and supply up to 800 milliamps at the collector pin via the emitter pin.
+In a tabular section, it will include the electrical characteristics of the part such as voltage ratings, current ratings and temperature characteristics.  In the case of the 2N2222A, we see that the part can "switch" up to 50 Volts and supply up to 800 milliamps at the collector pin via the emitter pin.
 
 Additional information in the data sheet will provide information such as DC Current gain (Hfe) sometimes called "beta" which in this case is pretty much between 100 and 300 depending on emitter current being roughly 200mA and the base current of around 15ma.
 
@@ -396,7 +396,7 @@ At the end of most data sheets you will also find physical dimension data, usefu
 ## Diodes
 
 A diode is a two-terminal device that allows current
-to flow in one direction. In electronics terms, diodes are a {$$}pn{/$$} junction devices.  The concepts behind P type and N type of semiconductor doping are rather complex. In layman's terms though, it involves an area with P-doped "holes" and an area with N-doped spare electrons in a common substrate. The point at which the two materials meet creates a depletion layer where holes and electrons are basically "kept in place" until the correct conditions are met known as the junction threshold.  This is commonly around 0.6 volts.
+to flow in one direction. In electronics terms, diodes are a {$$}pn{/$$} junction devices.  The concepts behind P type and N type of semiconductor doping are rather complex. In layman's terms though, it involves an area with P-doped "holes" and an area with N-doped spare electrons in a common substrate. The point at which the two materials meet creates a depletion layer where holes and electrons are basically "kept in place" until the correct conditions are met known as the junction threshold.  This is commonly around 0.6 Volts.
 
 When the Anode (p type) is more positive than the Cathode (n-type), the barrier at the junction is "forward-biased" it breaks down because the potential barrier is lowered as electrons reach the region from this direction and this allows current to flow.
 
@@ -450,13 +450,13 @@ Current Source
 
 : We would use a PNP or P-channel device to switch the the "supply" side of a device being controlled.  This is known as both *high-side* switching and *current sourcing*.
 
-It is far more popular to switch the low-side of a circuit, since you do not need to concern yourself with the operating voltage on the high-side of the device being controlled.  For example, if you use a low side switch, you can control it with a 5 volt signal at the base and not care that the high side of the device being controlled is being supplied by a much higher voltage, which might be 12, 24, maybe 50V or more.
+It is far more popular to switch the low-side of a circuit, since you do not need to concern yourself with the operating voltage on the high-side of the device being controlled.  For example, if you use a low side switch, you can control it with a 5 Volt signal at the base and not care that the high side of the device being controlled is being supplied by a much higher voltage, which might be 12, 24, maybe 50V or more.
 
-A> High voltage NIXIE tubes of the 1950' and 60's can be driven with Logic IC's while the high side, the anode, of the tubes operates at 170 volts DC. While it is clearly safer to use high voltage logic IC's and transistors, you can actually drive Nixie tube cathodes with transistors that have much lower breakdown voltages.
+A> High voltage NIXIE tubes of the 1950' and 60's can be driven with Logic IC's while the high side, the anode, of the tubes operates at 170 Volts DC. While it is clearly safer to use high voltage logic IC's and transistors, you can actually drive Nixie tube cathodes with transistors that have much lower breakdown voltages.
 
 ![Example current sink driver for relay](images/driver.jpg)
 
-The issues with a PNP driver become complicated fast.  To be able to turn the PNP transistor all the way off, you will need a voltage close to the Emitter voltage. This means that you need a pullup resistor (R1) to 12V. This also means that you are applying this 12 volts at a point *too* close to the Arduino pin, and the *Arduino* pin will want nothing to do with any voltage higher than the supply voltage on the *Arduino* board.  To do this driver properly, you will need to add a NPN transistor in an open collector manner added to interface with the PIN, making using a PNP in this way less practical than the NPN method unless the positive voltage being switched is the same or less than the logic voltage on the board.
+The issues with a PNP driver become complicated fast.  To be able to turn the PNP transistor all the way off, you will need a voltage close to the Emitter voltage. This means that you need a pullup resistor (R1) to 12V. This also means that you are applying this 12 Volts at a point *too* close to the Arduino pin, and the *Arduino* pin will want nothing to do with any voltage higher than the supply voltage on the *Arduino* board.  To do this driver properly, you will need to add a NPN transistor in an open collector manner added to interface with the PIN, making using a PNP in this way less practical than the NPN method unless the positive voltage being switched is the same or less than the logic voltage on the board.
 
 
 ![Example current source driver for relay](images/pnpdriver.jpg)
@@ -486,7 +486,7 @@ So, let's do an example of how to determine the best value of a resistor using O
 
 ![Current Limiting Resistor for LED](images/led-high-low.jpg)
 
-1) We will determine the value based on a power supply voltage of 5 volts
+1) We will determine the value based on a power supply voltage of 5 Volts
 2) We will read the data sheet to determine the optimal conditions for the LED
 
 So lets look at the data sheet:
@@ -516,13 +516,13 @@ we need to know the nominal forward voltage of the device, or the voltage where 
 
 
 
-So lets review what we know:  The source voltage will be 5 volts. The LED current will be 20 mA.  The forward voltage drop of the LED is rated at 1.7 volts.
+So lets review what we know:  The source voltage will be 5 Volts. The LED current will be 20 mA.  The forward voltage drop of the LED is rated at 1.7 Volts.
 
 Ohm's law states that resistance is voltage divided by current, expressed as {$$}R = \frac {E}{I} {/$$}.
 
 So, Ohm's law has us calculate; {$$} Resistance = \frac {5 Volts}{0.020 amps} = 250 Ohms{/$$}.  
 
-**Wait! That's not right.**  We forgot the forward voltage drop of the LED. So, we subtract 1.7 volts 5 volts for 3.3 volts and we do it again.  And this time we get 165 Ohms.  
+**Wait! That's not right.**  We forgot the forward voltage drop of the LED. So, we subtract 1.7 Volts 5 Volts for 3.3 Volts and we do it again.  And this time we get 165 Ohms.  
 
 Now we see where the sequence of available resistors helps us determine the best match.  It is most likely that you have 20% resistors on hand and the closest conservative match for 160 Ohms is 220 Ohms and the closest match for the "bad math" solution is still... 220 Ohms.  This is most likely why you often see people create examples where the they forget to include the forward voltage drop in the equation. If, however, you have a collection of 10% or 5% resistors on hand, you could find a closer match. You just have to cope with the fact that 10% and better resistors usually cost more.
 
