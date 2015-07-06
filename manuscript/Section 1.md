@@ -11,7 +11,7 @@ Now, in 2015, there are many different *Arduino* development board types and the
 
 We should be in agreement that  *Arduino* is: 
 
-* A micro-controller development platform that is primarily based on the ATMEL AVR family of controllers though some other controller families are supported  
+* A micro-controller development platform that is primarily based on the Atmel AVR family of controllers though some other controller families are supported  
 
 * Development board designs that are *almost* entirely open source, which makes it possible for you to build your own development boards from parts that you source yourself.  
 
@@ -75,13 +75,13 @@ The IDE will still have the *official* default AVR cores installed in the IDE pr
 I> You can see where your Board Manager installed core files are kept by checking the location where your IDE is keeping your `preferences.txt` file.  Use the `File -> Preferences` menu to see your operating system specific location.  The IDE Board Manager will install your board related files in a `packages` folder below where it stores your IDE preferences, so you might want to make sure it gets *backed up* along with all your other user specific files.
  
  
-### Method 2  - Json File URL's
+### Method 2  - JSON File URLs
  
-The second method of adding 3rd party cores is a bit more advanced. You specify a comma separated list of 3rd party provider URL's under the `File > Preferences` menu in the field marked: **Additional Boards Manager URL's**. You would fill in the web based file specifications for the custom `package_xxx_index.json` files as provided by 3rd party repositories creators.  This option has been available since Arduino IDE version 1.64. The new additional boards/cores can be listed and can be found quickly by using the pull-down menu in `Board Manager` and selecting  the "Contributed" type.  
+The second method of adding 3rd party cores is a bit more advanced. You specify a comma separated list of 3rd party provider URLs under the `File > Preferences` menu in the field marked: **Additional Boards Manager URLs**. You would fill in the web based file specifications for the custom `package_xxx_index.json` files as provided by 3rd party repositories creators.  This option has been available since Arduino IDE version 1.6.4. The new additional boards/cores can be listed and can be found quickly by using the pull-down menu in `Board Manager` and selecting  the "Contributed" type.  
 
 ![Board Manager](images/URL1.png)
 
-You would fill in the URL or comma separated multuple URL's.   
+You would fill in the URL or comma separated multiple URLs.
 
 
 ![Board Manager](images/URL2.png)
@@ -90,7 +90,7 @@ You would fill in the URL or comma separated multuple URL's.
 Press `OK` and then close the IDE and re-open it.
 
 
-I> A quick and easy example of how to do this at [Adafruit](https://learn.adafruit.com/add-boards-arduino-v164) but due to the nature of the web, this link may not last forever.  The Adafuit package list JSON file is here:[Adafruit Board Index Package JSON] (https://adafruit.github.io/arduino-board-index/package_adafruit_index.json)   
+I> A quick and easy example of how to do this at [Adafruit](https://learn.adafruit.com/add-boards-arduino-v164) but due to the nature of the web, this link may not last forever.  The Adafuit package list JSON file is here:[Adafruit Board Index Package JSON](https://adafruit.github.io/arduino-board-index/package_adafruit_index.json)   
 
 *Yeah, we got your beanie propeller spinning fast for this one but you now have some 3rd party content!*
 
@@ -122,11 +122,11 @@ W> If you use multiple methods for core installation, it is possible to end up w
 
 ## *Intelligent Tools Menu*
 
-When boards are selected that contain multiple processor options, such as the *Arduino* *Mega* series or the *Duemillenove*, you will see a new menu option that allows you to select which processor type is on the board you have selected.  In addition, the board you have selected will now show up at the bottom right in the IDE next to the current serial port that is being used. Having the wrong board or controller selected or the wrong serial port will cause compilation and upload issues that are not always obvious but at least now you can quickly see if what have selected matches your hardware.
+When boards are selected that contain multiple processor options, such as the *Arduino* *Mega* series or the *Duemilanove*, you will see a new menu option that allows you to select which processor type is on the board you have selected.  In addition, the board you have selected will now show up at the bottom right in the IDE next to the current serial port that is being used. Having the wrong board or controller selected or the wrong serial port will cause compilation and upload issues that are not always obvious but at least now you can quickly see if what have selected matches your hardware.
 
 
 ## *Improved Library Support*
-Similar to the `Tools -> Board -> Board Manager` improvements, the library menu has a new option called "Library Manager". It is under `Sketch -> Include Library -> Manage Libraries`. In this pop-up menu, you can select a library and press "`Install`" or request "`more information`", which will direct you to the *GITHUB* page where the `README` and master files exist for the library.
+Similar to the `Tools -> Board -> Board Manager` improvements, the library menu has a new option called "Library Manager". It is under `Sketch -> Include Library -> Manage Libraries`. In this pop-up menu, you can select a library and press "`Install`" or request "`more information`", which will direct you to the *GitHub* page where the `README` and master files exist for the library.
 
 
 Selecting "`Install`" will automatically download and install the library into your sketch management folder under "`\libraries\`".   If updates are available, an `Update` button will replace the `Install` button. Installed libraries will show up as `installed`.  You are also able to chose different versions if, for example, a particular release does not work well for you.
@@ -174,11 +174,11 @@ Some recent changes I personally like:
 
 *Arduino* is based on open source projects named *Processing* and *Wiring*. *Wiring* was created by Hernando Barragen and was based on *Processing*, which Ben Fry and Casey Reas created as a simple but powerful data visualization tool for personal computers. 
 
-The *Processing* IDE is a cross-platform application written in Java.  It laid the ground work for the whole series of development IDE's that followed. It was *Wiring*  that made the original task of writing simplified C based code for micro controllers possible.  Having these controllers now interact with code written on a personal computer using *Processing* meant that new interactive and artistic projects could be created quickly and easily, even by novices.  
+The *Processing* IDE is a cross-platform application written in Java.  It laid the ground work for the whole series of development IDEs that followed. It was *Wiring*  that made the original task of writing simplified C based code for microcontrollers possible.  Having these controllers now interact with code written on a personal computer using *Processing* meant that new interactive and artistic projects could be created quickly and easily, even by novices.  
 
-When *Wiring* was originally introduced however, it supported very few and very expensive development boards that placed them out of the reach of struggling students and hobbyists. This led to the sister project that became *Arduino* which offered a much more affordable development board solution based on inexpensive and simplified AVR micro controllers and development board. Even now, a typical Wiring development board is based on the Atmel ATMega1281 controller and costs around $60 US.
+When *Wiring* was originally introduced however, it supported very few and very expensive development boards that placed them out of the reach of struggling students and hobbyists. This led to the sister project that became *Arduino* which offered a much more affordable development board solution based on inexpensive and simplified AVR microcontrollers and development board. Even now, a typical Wiring development board is based on the Atmel ATmega1281 controller and costs around $60 US.
 
-I> One of the difficult changes that occurred in the move from the early *Arduino* Environment release to version 1.0 is the name change of the header file from `Wprogram.h` to  `Arduino.h`.  It was a good change, but it broke all of the libraries that were created prior to version 1.0 so there were many existing libraries that needed to be fixed before sketches could be compiled without errors again. The file, `Wprogram.h`, actually *means* "Wiring Program" and since *Arduino* is not *Wiring* but is a fully developed *fork* of it, it made sense to change it to match the new *Arduino* IDE environment. At the same time, the default extention of "PDE" was changed to "INO" for similar reasons, since *PDE* is the extension name for  "Processing Development Environment".  It made it difficult to quickly identify true *Processing* code for the users computer from the code that was intended for the *Arduino* device.  It needed to be changed. 
+I> One of the difficult changes that occurred in the move from the early *Arduino* Environment release to version 1.0 is the name change of the header file from `WProgram.h` to  `Arduino.h`.  It was a good change, but it broke all of the libraries that were created prior to version 1.0 so there were many existing libraries that needed to be fixed before sketches could be compiled without errors again. The file, `WProgram.h`, actually *means* "Wiring Program" and since *Arduino* is not *Wiring* but is a fully developed *fork* of it, it made sense to change it to match the new *Arduino* IDE environment. At the same time, the default extention of "PDE" was changed to "INO" for similar reasons, since *PDE* is the extension name for  "Processing Development Environment".  It made it difficult to quickly identify true *Processing* code for the users computer from the code that was intended for the *Arduino* device.  It needed to be changed. 
 
 
 As mentioned,  the *Arduino* IDE has a historical connection to its *Wiring* and *Processing* past [http://wiring.org.co](http://wiring.org.co "Wiring").  The *Arduino* IDE has not deviated a great deal from either of its predecessors over the years.  The kind of development boards that *Wiring* and *Arduino* implementations support differs, but they also share some development boards in common.  The connection between *Arduino* and *Wiring* remains strong even 10 years later.
@@ -189,12 +189,12 @@ If you visit the *Wiring* programming reference page, at [http://wiring.org.co/r
 It should be clear that the primary goal of *Wiring*, *Processing* and ultimately *Arduino* is to create a standardized platform and a hardware independent environment for the rapid development of micro-controller based projects.  Here are some clear goals that led to Arduino's success.
 
 * It should not matter if you use a Microsoft Windows platform, an Apple Macbook or a Linux variant, the IDE experience remains be similar.
-* It should not matter if you use an Atmega, an STM32 processor, an ATTiny or even an ESP8266 development board, the experience of writing and uploading code should be similar.
+* It should not matter if you use an ATmega, an STM32 processor, an ATtiny or even an ESP8266 development board, the experience of writing and uploading code should be similar.
 
-On the micro controller side, the *Arduino* dialect of C++ has maintained its distance from the hardware specific code features of each controller device being used, making it easy to migrate projects to new architectures, called *cores*,  as needed.
+On the microcontroller side, the *Arduino* dialect of C++ has maintained its distance from the hardware specific code features of each controller device being used, making it easy to migrate projects to new architectures, called *cores*,  as needed.
 
 
-I> Being open source, some totally new device architectures are supported by independent solutions which were based on the *Arduino* IDE, such as *Energia* for the Texas Instruments MSP430 family and *MPIDE* for the Microchip ChipKIT series and even the Flutter Wireless boards, which are a recent Kickstarter release. It is not clear, due to the modifications to the Arduino IDE since 1.60, if any of these projects will ever merge with Arduino.
+I> Being open source, some totally new device architectures are supported by independent solutions which were based on the *Arduino* IDE, such as *Energia* for the Texas Instruments MSP430 family and *MPIDE* for the Microchip ChipKIT series and even the Flutter Wireless boards, which are a recent Kickstarter release. It is not clear, due to the modifications to the Arduino IDE since 1.6.0, if any of these projects will ever merge with Arduino.
 
 As you might have noticed, I call all of the added functions in *Arduino*, a *dialect* of the underlying standard C++ language. These functions add to its "hardware abstraction" abilities and are similar to many of the *Processing* routines. They add to the available C++ tools by providing useful helper routines that can be re-written for each device family core but still provide a common interface.  They also maintain a good amount of isolation from low level device specific code.  Of course, there it nothing preventing you from writing very device specific code if you want to.
 
@@ -207,7 +207,7 @@ Here's the good news. The *Arduino* environment has changed and improved at a mo
 
 # Quick tips on some Arduino Helper Functions and Constants
 
-We will skip some of the more traditional items such as standard C style structure, flow control,operators and the things you might find in typical sketches.  Here is a list of some of the slightly less-obvious items, features and/or updates available to you when writing code.
+We will skip some of the more traditional items such as standard C style structure, flow control, operators and the things you might find in typical sketches.  Here is a list of some of the slightly less-obvious items, features and/or updates available to you when writing code.
 
 ### Setup Related Items
 
@@ -240,14 +240,14 @@ analogReference()
 
 
 *     DEFAULT -- the default analog reference is based on the supply voltage (Examples: 5V Uno, 3.3V Fio)
-*     INTERNAL -- an built-in reference, equal to 1.1 volts on the ATmega168 or ATmega328 and 2.56 volts on the ATmega8 (not available on the Arduino Mega)
+*     INTERNAL -- an built-in reference, equal to 1.1 Volts on the ATmega168 or ATmega328 and 2.56 Volts on the ATmega8 (not available on the Arduino Mega)
 *     INTERNAL1V1 -- a built-in 1.1V reference (Arduino Mega only)
 *     INTERNAL2V56 -- a built-in 2.56V reference (Arduino Mega only)
 *     EXTERNAL -- the voltage applied to the AREF pin (0 to 5V only) is used as the reference.
 
 When the Arduino makes an analogue reading, it compares the voltage measured at the specified analogue pin against the voltage of specified reference voltage. It then converts the voltage into a 10-bit number (0-1023). By specifying a smaller reference voltage, you can get measurements of higher resolution if you can cope with a smaller voltage range.
 
-5V resolution: 5v/1024 units = 0.0048 millivolts per unit
+5V resolution: 5V/1024 units = 0.0048 millivolts per unit
 1.1V
 
 Usage: `analogReference(INTERNAL);`
@@ -331,7 +331,7 @@ false
 
 PIN0 though PIN*x*
 
-   :  The pin labels for pins are pre-assigned port mappings to make dealing with individual pins easier. Pins on micro controllers are commonly attached to 8 bit wide ports.  In the case of an Arduino UNO, pin0 is actually Port D, Pin 0 and A0 is mapped to Port C, Pin 0.  Th concept of grouping pins into *ports* is hidden from the Arduino coder since it is not a universal construct on all micro controllers. 
+   :  The pin labels for pins are pre-assigned port mappings to make dealing with individual pins easier. Pins on microcontrollers are commonly attached to 8 bit wide ports.  In the case of an Arduino UNO, pin0 is actually Port D, Pin 0 and A0 is mapped to Port C, Pin 0.  Th concept of grouping pins into *ports* is hidden from the Arduino coder since it is not a universal construct on all microcontrollers. 
 
 T> Analog pins A0 - A*x* have regular pin names as well. *When defined as digital pins, A0 can be referred to as PIN14, A1 as PIN15, etc.*
 
@@ -604,7 +604,7 @@ So in the end, I did write more functions and lines of code rather than keeping 
 
 ## What is all this about interrupts anyway?
 
-You know, there was a time when I knew nothing about micro controllers and of the topics that can completely elude you is controller interrupts. One of the reasons is due to the fact that it's not always obvious when you need to implement an interrupt in your code.
+You know, there was a time when I knew nothing about microcontrollers and of the topics that can completely elude you is controller interrupts. One of the reasons is due to the fact that it's not always obvious when you need to implement an interrupt in your code.
 
 
 ### Project: Creating Cooperative Functions
